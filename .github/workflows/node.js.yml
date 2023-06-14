@@ -27,11 +27,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: |
-      cd albion-react-ui
-      npm ci
+        cd albion-react-ui
+        npm ci
     - run: |
-      cd albion-react-ui
-      npm run build --if-present
+        cd albion-react-ui
+        npm run build --if-present
     - run: |
-      cd albion-react-ui
-      npm test
+        cd albion-react-ui
+        npm test
