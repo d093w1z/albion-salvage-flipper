@@ -4,7 +4,7 @@
   "description": "react app for albion online MMORPG item flipping",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "react-scripts test"
   },
   "author": "d093w1z",
   "license": "ISC",
