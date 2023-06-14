@@ -28,13 +28,13 @@ jobs:
         cache: 'npm'
     - name: Install Dependencies
     - run: |
-        cd albion-react-ui
-        npm ci
+          cd albion-react-ui
+          npm ci
     - name: Build project
     - run: |
-        cd albion-react-ui
-        npm run build --if-present
+          cd albion-react-ui
+          npm run build --if-present
     - name: Run Tests
     - run: |
-        cd albion-react-ui
-        npm test
+          cd albion-react-ui
+          npm test
