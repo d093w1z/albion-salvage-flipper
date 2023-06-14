@@ -27,14 +27,14 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Install Dependencies
-    - run: |
+      run: |
           cd albion-react-ui
           npm ci
     - name: Build project
-    - run: |
+      run: |
           cd albion-react-ui
           npm run build --if-present
     - name: Run Tests
-    - run: |
+      run: |
           cd albion-react-ui
           npm test
