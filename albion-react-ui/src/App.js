@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Layout hasSider>
-          <Sider align trigger={null} collapsible collapsed={collapsed}>
+          <Sider trigger={null} collapsible collapsed={collapsed}>
             <Button
               type="text"
               icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
@@ -34,13 +34,13 @@ function App() {
             />
             <SideBar />
           </Sider>
-          <Layout>
+          <Layout >
             <Header
               style={{ padding: 0, background: colorBgContainer, fontSize: 2 }}
             >
               <AppHeader />
             </Header>
-            <Content>
+            <Content style={{ display:"flex", padding: 0 }}>
               <PageContent />
             </Content>
             <AppFooter />
